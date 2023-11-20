@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.border-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 10px solid #3498db;
+    /* Add a blue border */
+}
+
+.container {
+    text-align: center;
+    background-color: #ecf0f1;
+    /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    /* Blue border for cells */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
